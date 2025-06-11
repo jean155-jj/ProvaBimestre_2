@@ -4,7 +4,7 @@
     background-color: rgb(255, 255, 255);
 }
 
-header , footer{
+header , footer{/*Deixando a parte de cima da pagina e o rodapé no mesmo padrão*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -12,12 +12,12 @@ header , footer{
     padding: 20px;
 }
 
-header{
+header{/*ajuste no cabeçalho para ficar um pouco melhor visualização*/
     background-color: rgb(255, 255, 255);
     padding: 20px;
 }
 
-h1.topo{
+h1.topo{/*Parte designada para personalisar o titulo da pagina*/
     box-sizing: border-box;
     width: 500px;
     padding: 0;
@@ -50,5 +50,5 @@ section.meio{
     max-width: 800px;
     margin: 50px auto;
     padding: 30px;
-    background-color: ;
+    background-color: #ffffff;
 }
