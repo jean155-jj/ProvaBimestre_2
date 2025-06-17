@@ -48,7 +48,54 @@
                 <label for="detalhes">Faça uma descrição detalhada da sua ONG</label>
                 <textarea name="none" id="none" rows="10" cols="80"></textarea>
             </p>
-            
+            <h3>Informações de Endereço</h3>
+            <p>
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000" autocomplete="postal-code">
+                <small>Formato: 00000-000</small>
+            </p>
+            <p>
+                <label for="rua">Rua/Avenida:</label>
+                <input type="text" id="rua" name="rua" required autocomplete="address-line1">
+            </p>
+            <p>
+                <label for="numero">Número:</label>
+                <input type="text" name="numero" id="numero" required autocomplete="address-line2">
+            </p>
+            <p>
+              <label for="bairro">Bairro:</label>
+              <input type="text" name="bairro" id="bairro" required autocomplete="address-level3">  
+            </p>
+            <p>
+              <label for="cidade">Cidade:</label>
+              <input type="text" name="cidade" id="cidade" required autocomplete="address-level3">  
+            </p>
+            <p>
+              <label for="estado">Estado:</label>
+              <input type="text" name="estado" id="estado" required autocomplete="address-level1">  
+            </p>
+            <p>
+              <label for="complemento">Complemento (Opcional):</label>
+              <input type="text" name="complemento" id="complemento" required autocomplete="address-line3">  
+            </p>
+            <h3><b> Informações para contato</b></h3>
+            <p>
+                <label for="telefone">Digite o telefone para contato:</label>
+                <input type="tel" name="telefone" id="telefone" required autocomplete="tel" pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(00) 00000-0000">
+                <small>Formato: (00) 00000-0000</small>
+            </p>
+            <p>
+                <label for="email">Digite o E-mail para contato:</label><br>
+                <input type="email" name="email" id="email" required autocomplete="email">
+            </p>
+
+            <button onclick="cadastrar()" class="btnCadastrar">Cadastrar</button>
+            <small id="validacao"><b>Valide as informações antes de cadastrar!</b></small>
+        </div>
+        <div id="contato">
+            <h2>Entre em contato para mais informações</h2>
+            <p> <b>Email: plataformasolidaria@gmail.com</b></p>
+            <p><b>Telefone: (43) 98448-8448</b></p>
         </div>
     </section>
 </main>
