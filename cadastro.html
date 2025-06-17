@@ -5,15 +5,34 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Cadastro</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='cadastro.css'>
     <script src='main.js'></script>
 </head>
-<body>
-     <div class="cabecalho">
-        <a href="index.html"><button>Inicio</button></a>
-        <a href="cadastro.html"><button>Cadastro de Necessidades</button></a>
-        <a href="visualizacao.html"><button>Visualização de Necessidades</button></a>
-    </div>
-    
-</body>
+<header>
+    <h1 class="topo">Plataforma Solidaria</h1> <!--Titulo com o nome do site-->
+
+    <body>
+        <div class="cabecalho">
+            <button onclick="window.location.href='index.html'" class="bot1">Inicio</button> <!--Botão de inicio-->
+            <button onclick="window.location.href='cadastro.html'"class="bot2">Cadastre sua
+                ONG</button><!--Botão para entrar na pagina de cadastro-->
+            <button onclick="window.location.href='visualizacao.html'"class="bot3">Visualização de
+                ONG</button><!--Botão para ir para pagina de visualização-->
+        </div>
+    </body>
+</header>
+<main>
+    <section>
+        <h1 class="chama">Venha cadastrar a sua ONG</h1>
+
+        <h3 class="pergunta">Deseja cadastrar sua ONG em nosso site?</h3>
+        <div>
+            <button id="btnSim" class="btnSim">Sim</button>
+            <button id="btnNim" class="btnnao">Não</button>
+        </div>
+        <div id="formOng" class="form-container">
+            <h1 cadastro>Cadastro da ONG</h1>
+        </div>
+    </section>
+</main>
 </html>
