@@ -8,11 +8,27 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
-<body>
-     <div class="cabecalho">
-        <a href="index.html"><button>Inicio</button></a>
-        <a href="cadastro.html"><button>Cadastro de Necessidades</button></a>
-        <a href="visualizacao.html"><button>Visualização de Necessidades</button></a>
+<header>
+    <h1 class="topo">Plataforma Solidaria</h1> <!--Titulo com o nome do site-->
+
+    <body>
+        <div class="cabecalho">
+            <button onclick="window.location.href='index.html'" class="bot1">Inicio</button> <!--Botão de inicio-->
+            <button onclick="window.location.href='cadastro.html'"class="bot2">Cadastre sua
+                ONG</button><!--Botão para entrar na pagina de cadastro-->
+            <button onclick="window.location.href='visualizacao.html'"class="bot3">Visualização de
+                ONG</button><!--Botão para ir para pagina de visualização-->
+        </div>
+    </body>
+</header>
+<main>
+    <div id="listaOngs" class="container-ongs"></div>
+    <div id="detalhesOng" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <div id="conteudoOng"></div>
+        </div>
+
     </div>
-</body>
+</main>
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -14,9 +15,9 @@
     <body>
         <div class="cabecalho">
             <button onclick="window.location.href='index.html'" class="bot1">Inicio</button> <!--Botão de inicio-->
-            <button onclick="window.location.href='cadastro.html'"class="bot2">Cadastre sua
+            <button onclick="window.location.href='cadastro.html'" class="bot2">Cadastre sua
                 ONG</button><!--Botão para entrar na pagina de cadastro-->
-            <button onclick="window.location.href='visualizacao.html'"class="bot3">Visualização de
+            <button onclick="window.location.href='visualizacao.html'" class="bot3">Visualização de
                 ONG</button><!--Botão para ir para pagina de visualização-->
         </div>
     </body>
@@ -51,7 +52,8 @@
             <h3>Informações de Endereço</h3>
             <p>
                 <label for="cep">CEP:</label>
-                <input type="text" name="cep" id="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000" autocomplete="postal-code">
+                <input type="text" name="cep" id="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000"
+                    autocomplete="postal-code">
                 <small>Formato: 00000-000</small>
             </p>
             <p>
@@ -63,25 +65,26 @@
                 <input type="text" name="numero" id="numero" required autocomplete="address-line2">
             </p>
             <p>
-              <label for="bairro">Bairro:</label>
-              <input type="text" name="bairro" id="bairro" required autocomplete="address-level3">  
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="bairro" id="bairro" required autocomplete="address-level3">
             </p>
             <p>
-              <label for="cidade">Cidade:</label>
-              <input type="text" name="cidade" id="cidade" required autocomplete="address-level3">  
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" required autocomplete="address-level3">
             </p>
             <p>
-              <label for="estado">Estado:</label>
-              <input type="text" name="estado" id="estado" required autocomplete="address-level1">  
+                <label for="estado">Estado:</label>
+                <input type="text" name="estado" id="estado" required autocomplete="address-level1">
             </p>
             <p>
-              <label for="complemento">Complemento (Opcional):</label>
-              <input type="text" name="complemento" id="complemento" required autocomplete="address-line3">  
+                <label for="complemento">Complemento (Opcional):</label>
+                <input type="text" name="complemento" id="complemento" required autocomplete="address-line3">
             </p>
             <h3><b> Informações para contato</b></h3>
             <p>
                 <label for="telefone">Digite o telefone para contato:</label>
-                <input type="tel" name="telefone" id="telefone" required autocomplete="tel" pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(00) 00000-0000">
+                <input type="tel" name="telefone" id="telefone" required autocomplete="tel"
+                    pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(00) 00000-0000">
                 <small>Formato: (00) 00000-0000</small>
             </p>
             <p>
@@ -99,4 +102,5 @@
         </div>
     </section>
 </main>
+
 </html>
