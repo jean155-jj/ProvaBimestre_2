@@ -1,110 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='cadastro.css'>
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="cadastro.css">
+    <script defer src="cadastro.js"></script>
 </head>
-<header>
-    <h1 class="topo">Plataforma Solidaria</h1> <!--Titulo com o nome do site-->
 
-    <body>
-        <div class="cabecalho">
-            <button onclick="window.location.href='index.html'" class="bot1">Inicio</button> <!--Botão de inicio-->
-            <button onclick="window.location.href='cadastro.html'" class="bot2">Cadastre sua
-                ONG</button><!--Botão para entrar na pagina de cadastro-->
-            <button onclick="window.location.href='visualizacao.html'" class="bot3">Visualização de
-                ONG</button><!--Botão para ir para pagina de visualização-->
-        </div>
-    </body>
-</header>
-<main>
-    <section>
-        <h1 class="chama">Venha cadastrar a sua ONG</h1>
+<body>
+    <header>
+        <h1 class="topo">Plataforma solidaria</h1>
+        <button onclick="window.location.href='index.html'" class="bot1">Inicio</button>
+        <button onclick="window.location.href='cadastro.html'" class="bot2">Cadastre sua ONG</button>
+        <button onclick="window.location.href='visualizacao.html'" class="bot3">Visualização</button>
+    </header>
 
-        <h3 class="pergunta">Deseja cadastrar sua ONG em nosso site?</h3>
-        <div>
-            <button id="btnSim" class="btnSim">Sim</button>
-            <button id="btnNim" class="btnnao">Não</button>
-        </div>
-        <div id="formOng" class="form-container">
-            <h1 cadastro>Cadastro da ONG</h1>
-            <p>
-                <label for="nome-ong">Nome da ONG:</label>
-                <input type="text" name="none" id="nome" required autocapitalize="name">
-            </p>
-            <p>
-                <label for="objetivo">Qual o objetivo da sua ONG:</label>
-                <input type="text" id="missao" name="none" required autocomplete="off">
-            </p>
-            <p>
-                <label for="Registro">Digite o número de Registro:</label>
-                <input type="text" name="none" id="registro">
-            </p>
-            <p>
-                <label for="detalhes">Faça uma descrição detalhada da sua ONG</label>
-                <textarea name="none" id="none" rows="10" cols="80"></textarea>
-            </p>
-            <h3>Informações de Endereço</h3>
-            <p>
-                <label for="cep">CEP:</label>
-                <input type="text" name="cep" id="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000"
-                    autocomplete="postal-code">
-                <small>Formato: 00000-000</small>
-            </p>
-            <p>
-                <label for="rua">Rua/Avenida:</label>
-                <input type="text" id="rua" name="rua" required autocomplete="address-line1">
-            </p>
-            <p>
-                <label for="numero">Número:</label>
-                <input type="text" name="numero" id="numero" required autocomplete="address-line2">
-            </p>
-            <p>
-                <label for="bairro">Bairro:</label>
-                <input type="text" name="bairro" id="bairro" required autocomplete="address-level3">
-            </p>
-            <p>
-                <label for="cidade">Cidade:</label>
-                <input type="text" name="cidade" id="cidade" required autocomplete="address-level3">
-            </p>
-            <p>
-                <label for="estado">Estado:</label>
-                <input type="text" name="estado" id="estado" required autocomplete="address-level1">
-            </p>
-            <p>
-                <label for="complemento">Complemento (Opcional):</label>
-                <input type="text" name="complemento" id="complemento" required autocomplete="address-line3">
-            </p>
-            <h3><b> Informações para contato</b></h3>
-            <p>
-                <label for="telefone">Digite o telefone para contato:</label>
-                <input type="tel" name="telefone" id="telefone" required autocomplete="tel"
-                    pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(00) 00000-0000">
-                <small>Formato: (00) 00000-0000</small>
-            </p>
-            <p>
-                <label for="email">Digite o E-mail para contato:</label><br>
-                <input type="email" name="email" id="email" required autocomplete="email">
-            </p>
+    <main>
+        <section>
+            <h1 class="chama">Venha cadastrar a sua ONG</h1>
+            <h3 class="pergunta">Deseja cadastrar sua ONG em nosso site?</h3>
+            <div class="botoes">
+                <button id="btnSim" class="btnsim">Sim</button>
+                <button id="btnNao" class="btnnao">Não</button>
+            </div>
 
-            <button onclick="cadastrar()" class="btnCadastrar">Cadastrar</button>
-            <small id="validacao"><b>Valide as informações antes de cadastrar!</b></small>
-        </div>
-        <div id="contato">
-            <h2>Entre em contato para mais informações</h2>
-            <p> <b>Email: plataformasolidaria@gmail.com</b></p>
-            <p><b>Telefone: (43) 98448-8448</b></p>
-        </div>
-    </section>
+            <div id="formOng" class="form-container">
+                <h1 class="cadastro">Cadastre sua ONG</h1>
+                <p><label>Nome da sua ONG:</label><input type="text" id="nome" required></p>
+                <p><label>Tipo de Ajuda:</label>
+                    <select id="tipoAjuda" required>
+                        <option value="">Selecione...</option>
+                        <option value="Educação">Educação</option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Meio Ambiente">Meio Ambiente</option>
+                        <option value="Doação de Alimentos">Doação de Alimentos</option>
+                        <option value="Doação de Roupas">Doação de Roupas</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </p>
+                <p><label>Título da Necessidade:</label><input type="text" id="titulo" required></p>
+                <p><label>Qual o objetivo:</label><input type="text" id="missao" required></p>
+                <p><label>Número de registro:</label><input type="text" id="registro" required></p>
+                <p><label>Descrição detalhada:</label><textarea id="descricao" rows="10" cols="80" required></textarea></p>
+                <h3>Endereço</h3>
+                <p><label>CEP:</label><input type="text" id="cep" required placeholder="00000-000"></p>
+                <p><label>Rua:</label><input type="text" id="rua" required></p>
+                <p><label>Número:</label><input type="text" id="numero" required></p>
+                <p><label>Bairro:</label><input type="text" id="bairro" required></p>
+                <p><label>Cidade:</label><input type="text" id="cidade" required></p>
+                <p><label>Estado:</label><input type="text" id="estado" required></p>
+                <p><label>Complemento:</label><input type="text" id="complemento"></p>
+                <p><label>Telefone:</label><input type="tel" id="telefone" required></p>
+                <p><label>Email:</label><input type="email" id="email" required></p>
+                <button onclick="cadastrar()" class="btnCadastrar">Cadastrar</button>
+                <small id="validacao">Valide as informações antes de cadastrar!</small>
+            </div>
 
-<footer>
-     <p>© 2025 Plataforma solidaria. Todos os direitos reservados.</p>
-</footer>
-</main>
+            <div id="modalObrigado" class="modal">
+                <div class="modal-content">
+                    <span id="btnFecharModal" class="fechar">&times;</span>
+                    <h2>Obrigado por cadastrar sua ONG!</h2>
+                    <p>Seus dados foram recebidos com sucesso.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Plataforma Solidária. Todos os direitos reservados.</p>
+    </footer>
+</body>
 
 </html>

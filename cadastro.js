@@ -22,6 +22,27 @@ document.addEventListener('DOMContentLoaded', function() {
         bairro: document.getElementById('bairro').value,
         complemento: document.getElementById('complemento').value,
         email: document.getElementById('email').value
-    }
-   }
+    };
+
+    const lista = JSON.parse(sessionStorage.getItem('ongs')) || [];
+    lista.push(ong);
+    sessionStorage.setItem('ongs', JSON.stringify(lista));
+
+    modal.style.display = 'block';
+   };
+
+   btnFechar.addEventListener('click', () => {
+    modal.style.display = 'none';
+    window.location.href = 'visualizacao.html';
+  });
+
+  btnSim?.addEventListener('click', () => {
+    formOng.style.display = 'block';
+    window.scrollTo({ top: formOng.offsetTop, behavior: 'smooth' });
+  });
+
+  btnNao?.addEventListener('click', () => {
+    window.location.href = 'visualizacao.html'
+  })
+
 });
