@@ -1,32 +1,28 @@
-* {
+*{
     margin: 5;
     padding: 10;
     background-color: rgb(255, 255, 255);
 }
 
-header,
-footer {
-    /*Deixando a parte de cima da pagina e o rodapé no mesmo padrão*/
-    background-size: cover;
+header, footer {    
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     padding: 20px;
-}
 
-header {
-    /*ajuste no cabeçalho para ficar um pouco melhor visualização*/
-    background-color: rgb(255, 255, 255);
+}
+header{
+    background-color: rgba(0, 0, 0, 0);
     padding: 20px;
 }
-
-h1.topo {
-    /*Parte designada para personalisar o titulo da pagina*/
+h1.topo{
     box-sizing: border-box;
     width: 500px;
-    padding: 0;
-    border: 4px auto solid #0059b3;
-    font-family: serif;
+    padding: 0px;
+    border: 2px solid #0059b3;
+    font-family:serif;
+    background-color: rgb(255, 255, 255);
     margin: 0 auto;
     font-size: 3.0em;
     background-image: url('abraço.topo.jpg');
@@ -34,25 +30,23 @@ h1.topo {
     background-repeat: no-repeat;
 }
 
-body {
+body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
+    color: #333;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
-
-button {
+button{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white;
     border-radius: 5px;
     border-color: black;
-    box-shadow: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.bot1,
-.bot2,
-.bot3 {
+.bot1{
     background-color: #2196F3;
     border: none;
     color: #fff;
@@ -67,25 +61,63 @@ button {
     transition: background-color 0.5s ease;
 }
 
-.bot1:hover,
-.bot2:hover,
+.bot1:hover{
+    background-color: #8a8ced;
+
+}
+
+.bot2{
+    background-color: #2196F3;
+    border: none;
+    color: #fff;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
+}
+
+.bot2:hover{
+    background-color: #8a8ced;
+
+}
+
+.bot3{
+    background-color: #2196F3;
+    border: none;
+    color: #fff;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
+}
+
 .bot3:hover{
-     background-color: #8a8ced;
-} 
+    background-color: #8a8ced;
+
+}
+
 h1.cadastro{
     margin-top: 20px;
-    color: 0055aa;
+    color: #0055aa;
 }
-
-#fomrOng{
+#formOng{
     display: none;
 }
-
-.btnSim{
+.btnsim{
     background-color: #2196F3;
     border: none;
     color: #fff;
-    padding: 10px 32px;
+    padding: 8px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -96,7 +128,7 @@ h1.cadastro{
     transition: background-color 0.5s ease;
 }
 
-.btnSim:hover{
+.btnsim:hover{
     background-color: #8a8ced;
 }
 
@@ -104,7 +136,7 @@ h1.cadastro{
     background-color: #2196F3;
     border: none;
     color: #fff;
-    padding: 10px 32px;
+    padding: 8px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -126,7 +158,7 @@ h1.chama{
 
 main{
     background-image: url('abraço.jpg');
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
     padding: 10px;
@@ -138,7 +170,7 @@ section{
     padding: 30px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .form-container{
@@ -154,7 +186,6 @@ section{
     margin-top: 20px;
     color: #0055aa;
 }
-
 .form-container input[type="text"],
 .form-container input[type="tel"],
 .form-container input[type="email"] {
@@ -166,13 +197,17 @@ section{
     font-size: 14px;
     transition: border-color 0.3s;
 }
+.form-container input:focus {
+    border-color: #0077cc;
+    outline: none;
+}
 
-.form-container small{
+.form-container small {
     color: #666;
     font-size: 12px;
 }
 
-.form-container button{
+.form-container button {
     background-color: #0077cc;
     color: #fff;
     padding: 12px 24px;
@@ -186,4 +221,95 @@ section{
 
 .form-container button:hover {
     background-color: #005fa3;
+}
+.form-container label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+p{
+    font-size: 1em;
+    margin-bottom: 15px;
+    margin: 0%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+ul{
+    list-style-type:circle;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li{
+    margin-bottom: 8px;
+}
+
+.btnCadastrar{
+    background-color: #2196F3;
+    border: none;
+    color: #fff;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
+}
+
+.btnCadastrar:hover{
+    background-color: #08f314;
+}
+
+#validacao{
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+    color: #000000;
+    
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.fechar {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #888;
+}
+
+.fechar:hover {
+  color: #000;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
 }
