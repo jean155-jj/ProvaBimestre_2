@@ -21,14 +21,15 @@
         </div>
     </body>
 </header>
-<main>
-    <div id="listaOngs" class="container-ongs"></div>
-    <div id="detalhesOng" class="modal">
-        <div class="modal-content">
-            <span class="fechar" onclick="fecharModal()">&times;</span>
-            <div id="conteudoOng"></div>
-        </div>
-
-    </div>
-</main>
+ <main>
+    <input type="text" id="pesquisaONG" placeholder="Pesquisar por nome, cidade, estado ou descrição..." class="campo-pesquisa">
+    <select id="filtroTipo" class="campo-pesquisa">
+      <option value="">Filtrar por Tipo de Ajuda</option>
+      <option value="Educação">Educação</option>
+      <option value="Saúde">Saúde</option>
+      <option value="Meio Ambiente">Meio Ambiente</option>
+      <option value="Doação de Alimentos">Doação de Alimentos</option>
+      <option value="Doação de Roupas">Doação de Roupas</option>
+      <option value="Outros">Outros</option>
+    </select>
 </html>
