@@ -4,25 +4,25 @@
     background-color: rgb(255, 255, 255);
 }
 
-header , footer{/*Deixando a parte de cima da pagina e o rodapé no mesmo padrão*/
-    background-size: cover;
+header, footer {    
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     padding: 20px;
-}
 
-header{/*ajuste no cabeçalho para ficar um pouco melhor visualização*/
-    background-color: rgb(255, 255, 255);
+}
+header{
+    background-color: rgba(0, 0, 0, 0);
     padding: 20px;
 }
-
-h1.topo{/*Parte designada para personalisar o titulo da pagina*/
+h1.topo{
     box-sizing: border-box;
     width: 500px;
-    padding: 0;
-    border: 4px auto solid #0059b3;
-    font-family: serif;
+    padding: 0px;
+    border: 4px solid #0059b3;
+    font-family:serif;
+    background-color: rgb(0, 0, 0);
     margin: 0 auto;
     font-size: 3.0em;
     background-image: url('abraço.topo.jpg');
@@ -33,14 +33,15 @@ h1.topo{/*Parte designada para personalisar o titulo da pagina*/
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
+    color: #333;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 main{
-    background-image: url('abraço.jpg') ;
-    background-size: cover;
+    background-image: url('abraço.jpg');
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
     padding: 10px;
@@ -50,16 +51,16 @@ section.meio{
     max-width: 800px;
     margin: 50px auto;
     padding: 30px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1.titulo{
     color: #0059b3;
     margin-top: 25px;
     font-size: 2.2em;
-    padding: o;
+    padding: 0;
     margin: 0;
 }
 
@@ -71,24 +72,33 @@ p{
 }
 
 ul{
-    list-style-type: circle;
+    list-style-type:circle;
     margin-left: 20px;
     margin-bottom: 20px;
 }
 
-ul,li{
-    margin-bottom: 5px;
+ul li{
+    margin-bottom: 8px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+
 }
 
 button{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
     border-radius: 5px;
-    border-color:black;
+    border-color: black;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.bot1, .bot2, .bot3{
-    background-color: #2196f3;
+
+.bot1{
+    background-color: #2196F3;
     border: none;
     color: #fff;
     padding: 10px 32px;
@@ -102,7 +112,47 @@ button{
     transition: background-color 0.5s ease;
 }
 
-.bot1:hover, .bot2:hover, .bot3:hover{
+.bot1:hover{
     background-color: #8a8ced;
+
 }
 
+.bot2{
+    background-color: #2196F3;
+    border: none;
+    color: #fff;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
+}
+
+.bot2:hover{
+    background-color: #8a8ced;
+
+}
+
+.bot3{
+    background-color: #2196F3;
+    border: none;
+    color: #fff;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
+}
+
+.bot3:hover{
+    background-color: #8a8ced;
+
+}

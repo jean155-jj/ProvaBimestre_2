@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Visualização</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='visualizacao.js'></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualização</title>
+  <link rel="stylesheet" href="visualizacao.css">
+  <script defer src="visualizacao.js"></script>
 </head>
-<header>
-    <h1 class="topo">Plataforma Solidaria</h1> <!--Titulo com o nome do site-->
+<body>
+  <header>
+    <h1 class="topo">Plataforma solidaria</h1>
+    <button onclick="window.location.href='index.html'" class="bot1">Inicio</button>
+    <button onclick="window.location.href='cadastro.html'" class="bot2">Cadastre sua ONG</button>
+    <button onclick="window.location.href='visualizacao.html'" class="bot3">Visualização</button>
+  </header>
 
-    <body>
-        <div class="cabecalho">
-            <button onclick="window.location.href='index.html'" class="bot1">Inicio</button> <!--Botão de inicio-->
-            <button onclick="window.location.href='cadastro.html'"class="bot2">Cadastre sua
-                ONG</button><!--Botão para entrar na pagina de cadastro-->
-            <button onclick="window.location.href='visualizacao.html'"class="bot3">Visualização de
-                ONG</button><!--Botão para ir para pagina de visualização-->
-        </div>
-    </body>
-</header>
- <main>
+  <main>
     <input type="text" id="pesquisaONG" placeholder="Pesquisar por nome, cidade, estado ou descrição..." class="campo-pesquisa">
     <select id="filtroTipo" class="campo-pesquisa">
       <option value="">Filtrar por Tipo de Ajuda</option>
@@ -33,7 +27,7 @@
       <option value="Outros">Outros</option>
     </select>
 
-     <div id="listaONGs" class="container-ongs"></div>
+    <div id="listaONGs" class="container-ongs"></div>
 
     <div id="detalhesONG" class="modal">
       <div class="modal-content">
@@ -46,4 +40,5 @@
   <footer>
     <p>&copy; 2025 Sistema de Cadastro de ONGs. Todos os direitos reservados.</p>
   </footer>
+</body>
 </html>
